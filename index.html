@@ -1,0 +1,32 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | Meltem Art Fellowship</title><meta name="description" content="Guided self-exploration of art, engaging through research and practice. An independent, unpaid and fully remote mentorship programme."><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%2280%22 font-size=%2290%22>🌬</text></svg>"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header><div class="wrap"><a class="logo" href="index.html">Meltem</a><nav><a href="index.html">Home</a><a href="team.html">Team</a><a href="fellowship.html">The Fellowship</a><a class="btn" href="index.html#interest">Express your interest</a></nav></div></header><main>
+<div class="wrap hero"><p class="hello" lang="fr"><em>Bienvenue</em> · <span lang="it">Benvenuti</span> · <span lang="tr">Hoş geldiniz</span></p>
+<h1>Meltem Art Fellowship</h1><svg class="wind" viewBox="0 0 900 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C120 0 200 60 320 30 S520 0 620 32 S800 55 900 14" fill="none" stroke="#1B3A8A" stroke-width="2"/><path d="M0 52 C150 20 260 58 380 40 S600 18 700 44 S830 50 900 36" fill="none" stroke="#A8323E" stroke-width="1.5" opacity=".6"/></svg>
+<p class="sub"><strong>Guided self-exploration of art, engaging through research and practice.</strong></p>
+<p class="sub">Rooted in Rome and fully remote. A mentored, flexible fellowship, with the first cohort starting in January 2027.</p>
+<p><a class="btn" href="#interest">Express your interest</a> &nbsp; <a class="btn alt" href="fellowship.html">See how it works</a></p></div>
+<section><div class="wrap pillars">
+<div><h3 lang="tr">Merak</h3><p class="tr">Turkish: curiosity, the wish to find out</p><p><strong>Explore.</strong> Spend time with art that moves you, whether exhibitions, films, books or music. Note down what you see, what you feel and what you learn.</p></div>
+<div><h3 lang="it">Abbozzo</h3><p class="tr">Italian: a first rough sketch</p><p><strong>Practise.</strong> Build a flagship project with a clear goal, and collaborate with others. Ideally it is linked to an open call or competition, but the real aim is to make something that matters to you.</p></div>
+<div><h3 lang="fr">Chemin faisant</h3><p class="tr">French: along the way</p><p><strong>Reflect.</strong> Meet your mentor, receive honest and kind feedback, and watch your progress take shape through your log and statistics.</p></div></div></section>
+<section><div class="wrap"><h2>What you take away</h2><ul class="take"><li>A certificate of completion</li><li>An overview of your hours and progress</li><li>A reference letter from your mentor</li><li>Guidance and feedback</li><li>A line for your CV and LinkedIn</li><li>A way to see, and value, the time you spend on art</li></ul></div></section>
+<section><div class="wrap"><h2>Why “Meltem”?</h2><p>The meltem is the summer wind that crosses the Mediterranean, from the Aegean to the Italian coast. It carries things from shore to shore. We like the idea of art travelling in the same way, between people, languages and places. It is also a Turkish given name, which suits a programme shaped by a French mentor, a Turkish fellow and a home in Rome.</p></div></section>
+<section><div class="wrap"><div class="note"><p>“I started this fellowship because I know how much it helps to have someone beside you while you find your direction. I will read your work carefully, give you honest and generous feedback, and be there throughout. You bring the curiosity; I will bring the time and the care.”</p><p><strong>Jeanne</strong></p></div></div></section>
+<section id="interest"><div class="wrap"><h2>Join the pilot cohort, January 2027</h2><p class="tr" lang="fr"><em>Dites-nous</em> · <span lang="it">Raccontateci</span> · <span lang="tr">Bize anlatın</span> <span lang="en-GB">(“Tell us about yourself”)</span></p>
+<form id="f" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Country and city<input name="location"></label>
+<label>What kind of art are you drawn to?<textarea name="art_interests" rows="3" required></textarea></label>
+<label>A link to your work or a profile (optional)<input type="url" name="link"></label>
+<label>Why this fellowship?<textarea name="why" rows="4" required></textarea></label>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+<label class="chk"><input type="checkbox" name="understands_unpaid" value="yes" required><span>I understand that this fellowship is unpaid, independent and fully remote.</span></label>
+<button class="btn" type="submit">Send my interest</button>
+<p class="err" id="err" role="alert">Something went wrong and your message was not sent. Please try again, or email us directly.</p></form>
+<p class="ok" id="ok" role="status">Thank you, <em lang="fr">merci</em>, <em lang="it">grazie</em>, <em lang="tr">teşekkürler</em>. We will be in touch by email soon.</p></div></section>
+<script>
+const f=document.getElementById("f");f.addEventListener("submit",async e=>{e.preventDefault();document.getElementById("err").style.display="none";
+try{const r=await fetch(f.action,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}});
+if(r.ok){f.style.display="none";document.getElementById("ok").style.display="block"}else throw 0}catch(_){document.getElementById("err").style.display="block"}});
+</script>
+</main><footer><div class="wrap"><p><strong>Meltem Art Fellowship</strong><br>Guided self-exploration of art, engaging through research and practice.</p><p>An independent, unpaid and fully remote mentorship programme.<br><a href="mailto:EMAIL@example.com">EMAIL@example.com</a> &nbsp; <a href="LINKEDIN_URL">LinkedIn</a></p><p lang="tr"><em>Damlaya damlaya göl olur.</em> <span class="tr" lang="en-GB">(Turkish proverb: “Drop by drop, a lake is made.”)</span></p></div></footer></body></html>
